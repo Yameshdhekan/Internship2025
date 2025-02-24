@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form action="#">
+            <table>
+                <caption>Registration Form</caption>
+                <tr>
+                    <td><label for="fname">Enter your first name</label></td>
+                    <td><input type="text" name="fname" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Enter your last name</label></td>
+                    <td><input type="text" name="lname" id="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Enter your password</label></td>
+                    <td><input type="password" name="pass" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">ReEnter your password</label></td>
+                    <td><input type="password" name="lname" id="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="num">Enter your mobile</label></td>
+                    <td><input type="tel" name="num" id="num" pattern="[0-9]{5} [0-9]{5}"></td>
+                </tr>
+                <tr>
+                    <td><label for="add">Enter your address</label></td>
+                    <td><input type="text" name="add" id="add"></td>
+                </tr>
+                <tr>
+                    <td><label for="gen">Select your  gender</label></td>
+                    <td><input type="radio" name="gender" id="male" value="Male">
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="female" value="Female">
+                    <label for="female">female</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other">other</label></td>
+                </tr>
+                <tr>
+                    <td><label for="hobby">Select your hobbies</label></td>
+                    <td><input type="checkbox" name="hobby" id="hobby1">
+                    <label for="hobby1">hobby1</label>
+                    <input type="checkbox" name="hobby" id="hobby2">
+                    <label for="hobby2">hobby2</label> </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Select your DOB</label></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td>select your Country</td>
+                    <td><select name="country" id="country">
+                            <option disabled selected  value="country"> country</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Australia">Australia</option>
+                            <option value="China">China</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="India">India</option>
+                            <option value="japan">Japan</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Russia">Russia</option>
+                            <option value="South Korea">South Korea</option>
+                            <option value="United States">United States</option>
+                        </select> </td>
+                </tr>
+                <tr>
+                    <td><label for="pic">Upload your pic</label></td>
+                    <td><input type="file" name="" id="" accept="image/*"></td>
+                </tr>
+            </table>
+            <input type="submit" value="submit" >
+            <input type="reset" value="reset">
+        </form>
+    </div>
+</body>
+</html>

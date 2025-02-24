@@ -1,0 +1,202 @@
+salceforce
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Signup Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #f4f6f9;
+        }
+
+        
+        .left-section {
+            width: 50%;
+            background-color: #032d60;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .left-section img {
+            max-width: 60%;
+            margin-bottom: 20px;
+        }
+
+        .left-section h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .left-section ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .left-section ul li {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .left-section ul li::before {
+            content: "• ";
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        .right-section {
+            width: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .form-container {
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .form-container img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        .form-container h2 {
+            font-size: 22px;
+            color: #032d60;
+        }
+
+        .form-container p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0070d2;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        .terms {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .terms a {
+            color: #0070d2;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        
+        @media screen and (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            .left-section {
+                width: 100%;
+                height: 40vh;
+            }
+
+            .right-section {
+                width: 100%;
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Section -->
+    <div class="left-section">
+        <img src="salesforce.png" alt="Salesforce Logo">
+        <h1>Build enterprise-quality apps fast</h1>
+        <ul>
+            <li>Drag-and-drop tools</li>
+            <li>Customize your data model</li>
+            <li>Powerful Apex code</li>
+            <li>Integrate with APIs</li>
+            <li>Enterprise-grade security</li>
+            <li>Custom UI frameworks</li>
+        </ul>
+    </div>
+
+    <!-- Right Section  -->
+    <div class="right-section">
+        <div class="form-container">
+            <img src="salesforce.png" alt="Salesforce">
+            <h2>Sign up for your Salesforce Developer Edition</h2>
+            <p>A Salesforce Platform environment for free.</p>
+
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Your email address" required>
+                <input type="text" placeholder="Your job role" required>
+                <input type="text" placeholder="Company Name" required>
+
+                <select required>
+                    <option value="">Select Country/Region</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="IN">India</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                </select>
+
+                <button type="submit">Sign Up</button>
+
+                <p class="terms">
+                    By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f6f9;
+}
+
+.left-section {
+    width: 50%;
+    background-color: #032d60;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-section img {
+    max-width: 60%;
+    margin-bottom: 20px;
+}
+
+.left-section h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.left-section ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.left-section ul li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.left-section ul li::before {
+    content: "• ";
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.right-section {
+    width: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-container img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.form-container h2 {
+    font-size: 22px;
+    color: #032d60;
+}
+
+.form-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0070d2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.terms {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #0070d2;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    .left-section {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .right-section {
+        width: 100%;
+        height: 60vh;
+    }
+}
